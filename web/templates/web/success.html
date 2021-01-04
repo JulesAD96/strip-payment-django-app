@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main class="mt-5">
+    <div class="card m-auto border-primary text-center" style="width: 20rem; height: auto;">
+		<div class="text-center">
+            <img id="succes-icon" class="" src="{% static 'check.png' %}" style="width:150px; height: 150px;">
+        </div>
+		<h4>Thank you for your contribution of ${{amount}}!</h4>
+		<p>Your support helps me fulfill my dream of teaching aspiring developers around the world! You should receive a receipt to the email you provided shortly :)</p>
+		<hr>
+		<a class="btn mb-3" href="{% url 'index' %}">&#x2190;Back to donation page</a>
+	</div> 
+    </main>
+	
+
+{% endblock content %}
